@@ -1,0 +1,95 @@
+body {
+  background-color: #8c2b52;
+  margin:0;
+  padding:0;
+  border:0;
+  overflow:hidden;
+}
+#title {
+  color: #672d84;
+
+
+
+}
+
+#title :hover {
+  color: blue;
+}
+
+
+/* .view {
+  border: 5px solid blue;
+} */
+.viewport {
+  height:580px;
+  overflow:hidden;
+  border: 5px solid #70f4d8;
+  background-color: tomato;
+}
+.ask-him {
+  margin-top: 20px;
+  border: 5px solid blue;
+}
+.exit {
+  margin-top: 20px;
+  border: 5px solid tomato;
+}
+
+/* animated heart */
+#heart{
+  background-image: url(http://buildnewgames.com/assets/article//dom-sprites/spritesheet.png);
+  width: 32px;
+  height: 32px;
+  background-position: -126px -194px;
+  display: inline-block;
+  position: absolute;
+}
+
+#container {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-position: -127px -191px;
+  position: relative;
+}
+
+/* end of styles for heart */
+
+.ask {
+  text-align: center;
+}
+#wolverine {
+  background-image: url("../images/heygurl.png");
+  height: 60px;
+  width: 58px;
+  background-position: -120px -4px;
+  display: inline-block;
+}
+
+/* Styles for each scenario */
+.scenario {
+  font-size: 20pt;
+
+}
+.options {
+font-size: 20pt;
+
+}
+
+/* Lose screen */
+.lose {
+  text-align: center;
+  color: yellow;
+  font-weight: 800;
+}
+
+/* LEVEL1 SCENARIO 1 IDs for DOM manipulation */
+#scenario1-input {
+
+}
+#scenario1-btn {
+
+}
+#remove {
+  
+}
