@@ -5,8 +5,8 @@
     <title>DATE NIGHT | Level 1</title>
 
     <link rel="stylesheet" href="../../project-one/css/bootstrap.css">
-    <link rel="stylesheet" href="../../project-one/css/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" href="../../project-one/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -33,10 +33,12 @@
                 <li class="options">A secluded alleyway</li>
                 <li class="options" id="remove">Your house ;-></li>
               </ol>
-            <form>
-              <input type="text" id="scenario1-input"class="form-control" placeholder="What do you do?">
-              <a class="btn btn-default" id="scenario1-btn" role="button" href="#">Submit answer</a>
-            </form>
+              <form id="remove" action="index.html" method="post">
+
+                <input type="text" id="scenario1-input" value="" class="form-control" placeholder="What do you do?">
+                <a class="btn btn-default" id="scenario1-btn" role="button" href="#">Submit answer</a>
+
+              </form>
         </div> <!--end of viewport-->
 
       </div> <!--END OF ROW-->

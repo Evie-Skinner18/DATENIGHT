@@ -30,51 +30,43 @@ $(function(){
   }
   fly();
 
-  // LEVEL 1, DATE WITH SHY MAN. If user input is b or c, change the
-  // href that the button takes them to to LOSE SCREEN
+
+  //SCENARIO 2
+
+  // global variables
   var scenario1btn = document.getElementById('scenario1-btn');
   var scenarioParag = document.getElementsByClassName("scenario");
   var parent = document.getElementsByTagName('ol');
   var removeOption = document.getElementById('remove');
   var options = document.getElementsByTagName("li");
   var scenario2 = [];
-  var stageOne = false;
 
 
-
-
-
- //SCENARIO 1
   scenario1btn.addEventListener("click", function(event){
     console.log($("#scenario1-input").val());
-    var userInput = ($("#scenario1-input").val());
+    var userInput =  ($("#scenario1-input").val());
     console.log(userInput);
+    var options = document.getElementsByTagName("li");
+    var scenarioParag = document.getElementsByClassName("scenario");
 
-
-     if (userInput === "1" && stageOne === true){
-      window.location.href = "level1-sc2.1.html";
+  // debugger
+    if (userInput === "1"){
+      // user picks option 1: branch off to no worries let's eat!(SC2)
+      scenario1btn.getAttributeNode("href").value = "level1-sc2.html";
 
     }
-      else if (userInput === "1"){
-        scenarioParag[0].innerHTML =
-        ("I'd tapas that! You arrive half an hour late to find Sydney waiting for you at a table. When you sit down, do you...");
-        options[0].innerHTML = ("Act as if nothing's wrong");
-        options[1].innerHTML = ("Apologise profusely. TfL's been a nightmare!");
-        var scenario2 = [scenarioParag[0], options[0], options[1]];
-        stageOne = true;
-        removeOption.remove();
-      }
-        else if (userInput === "2" && stageOne === true){
-          scenario1btn.getAttributeNode("href").value = "level1-sc2.html";
-        }
+    else {
+      // user picks option 2: special lose screen for being a dick!
+      window.location.href = "lose-screen-dick.html";
 
-      else {
-        scenario1btn.getAttributeNode("href").value = "lose-screen.html";
-      }
+      //dont need to remove anything this time
+      return scenarioParag[0], options[0], options[1];
+
+
+
+    }
 
   });
 
 
-
-
-});
+}); //end of jq test function

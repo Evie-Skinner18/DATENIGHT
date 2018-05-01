@@ -37,7 +37,7 @@ body {
 
 /* animated heart */
 #heart{
-  background-image: url(http://buildnewgames.com/assets/article//dom-sprites/spritesheet.png);
+  background-image: url("../images/spritesheet.png");
   width: 32px;
   height: 32px;
   background-position: -126px -194px;
@@ -69,6 +69,8 @@ body {
 /* Styles for each scenario */
 .scenario {
   font-size: 20pt;
+  text-align: center;
+
 
 }
 .options {
@@ -91,5 +93,5 @@ font-size: 20pt;
 
 }
 #remove {
-  
+
 }
