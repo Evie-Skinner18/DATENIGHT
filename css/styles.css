@@ -25,6 +25,7 @@ body {
   overflow:hidden;
   border: 5px solid #70f4d8;
   background-color: tomato;
+  padding: 10px;
 }
 .ask-him {
   margin-top: 20px;
@@ -55,6 +56,7 @@ body {
 
 /* end of styles for heart */
 
+/* home screen */
 .ask {
   text-align: center;
 }
@@ -65,7 +67,13 @@ body {
   background-position: -120px -4px;
   display: inline-block;
 }
-
+/* instructions */
+.instructions{
+  font-size: 20pt;
+  text-align: center;
+  color: #002b82;
+  margin-top: auto;
+}
 /* Styles for each scenario */
 .scenario {
   font-size: 20pt;
