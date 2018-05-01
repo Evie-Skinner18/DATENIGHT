@@ -1,31 +1,21 @@
-$(function(){
 
-  console.log("connected");
 
   function fly(){
     var heart = document.getElementById('heart');
     var position = 0;
     var flyingHeart = setInterval(frame, 70);
     function frame(){
-      //for(var position = 0; position < 60; position++){
-
         if(position === 60){
           clearInterval(position);
           heart.style.top = "";
           heart.style.left = "";
         }
         else {
-
-          //console.log(heart);
-          // debugger;
           position++
           heart.style.top = position + 'px';
           heart.style.left = position + 'px';
         }
-      //}
     }
-    // window.setInterval(fly(container)), 7000;
-      //call the function to animate the heart once every 70ms
 
   }
   fly();
@@ -41,15 +31,9 @@ $(function(){
   var stageOne = false;
 
 
-
-
-
  //SCENARIO 1
   scenario1btn.addEventListener("click", function(event){
-    console.log($("#scenario1-input").val());
     var userInput = ($("#scenario1-input").val());
-    console.log(userInput);
-
 
      if (userInput === "1" && stageOne === true){
       window.location.href = "level1-sc2.1.html";
@@ -73,8 +57,3 @@ $(function(){
       }
 
   });
-
-
-
-
-});

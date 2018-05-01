@@ -7,19 +7,12 @@ body {
 }
 #title {
   color: #672d84;
-
-
-
 }
 
 #title :hover {
   color: blue;
 }
 
-
-/* .view {
-  border: 5px solid blue;
-} */
 .viewport {
   height:580px;
   overflow:hidden;
@@ -86,11 +79,23 @@ font-size: 20pt;
 
 }
 
-/* Lose screen */
+/* Lose screens */
 .lose {
   text-align: center;
   color: yellow;
   font-weight: 800;
+}
+
+/* Styles for browser snob lose screen */
+#edge-browser {
+  background-image: url("../images/edge-browser.png");
+}
+
+/* Styles for developers' win screen */
+#developers {
+  background-image: url("../images/developers.png");
+  background-size: cover;
+
 }
 
 /* LEVEL1 SCENARIO 1 IDs for DOM manipulation */

@@ -1,13 +1,9 @@
-$(function(){
-
-  console.log("connected");
 
   function fly(){
     var heart = document.getElementById('heart');
     var position = 0;
     var flyingHeart = setInterval(frame, 70);
     function frame(){
-      //for(var position = 0; position < 60; position++){
 
         if(position === 60){
           clearInterval(position);
@@ -15,17 +11,11 @@ $(function(){
           heart.style.left = "";
         }
         else {
-
-          //console.log(heart);
-          // debugger;
           position++
           heart.style.top = position + 'px';
           heart.style.left = position + 'px';
         }
-      //}
     }
-    // window.setInterval(fly(container)), 7000;
-      //call the function to animate the heart once every 70ms
 
   }
   fly();
@@ -45,14 +35,11 @@ $(function(){
 
 
   scenario1btn.addEventListener("click", function(event){
-    console.log($("#scenario1-input").val());
     var userInput =  ($("#scenario1-input").val());
-    console.log(userInput);
     var options = document.getElementsByTagName("li");
     var scenarioParag = document.getElementsByClassName("scenario");
 
-  debugger
-  // in the new chesse/drink scenario, user selects option 2 shots
+  // in the new cheese/drink scenario, user selects option 2 shots
   // and is taken to the special lose screen for rudies (lose-screen-rude.html)
   if (userInput === "2" && stageOne === true){
     window.location.href = "lose-screen-rude.html";
@@ -62,9 +49,6 @@ $(function(){
     else if (userInput === "1" && stageOne === true){
       window.location.href = "level1-sc5-silence.html";
    }
-  //  else if userInput === "2" && stageOne === true){
-  //    window.location.href = "lose-screen-dick.html";
-  // }
   // user selects the correct option: 2 do you like cheese?
     else if (userInput === "2"){
       scenarioParag[0].innerHTML =
@@ -72,19 +56,10 @@ $(function(){
       options[0].innerHTML = ("Respect! Drinking certainly has its disadvantages.");
       options[1].innerHTML = ("Let yer hair down, we're on a date! Let's get shots!");
       stageOne = true;
-      // var newOption = options.createElement("Oh no that's sad for you. What's your health problem?");
-
-      //dont need to remove anything this time
     }
     else {
       // user picks impolite option 1: branch off to different scenario (TAKEN ABACK)
       scenario1btn.getAttributeNode("href").value = "level1-taken-aback.html";
-
-
-
     }
 
   });
-
-
-}); //end of jq test function

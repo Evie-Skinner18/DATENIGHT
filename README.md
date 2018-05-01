@@ -14,8 +14,8 @@ Your mission, should you choose to accept it! Is to build a **browser based game
 
 Your game must:
 
-* Include an instruction section explaining how to play the game.
-* Ether display a message when the user has won or display the users score after the game has finished.
+* Include an instruction section explaining how to play the game. done
+* Ether display a message when the user has won or display the users score after the game has finished. done
 * Be styled to perfection!
 * Be hosted online!
 
@@ -24,7 +24,7 @@ Your game must:
 * Your game could include a leaderboard.
 * Your game could be 2 player.
 * Your game could be played against the computer...
-* You could include some fancy animations in your game...
+* You could include some fancy animations in your game...done
 * You could into HTML5 Audio and include some snazzy sound effects... done
 
 ---
@@ -42,7 +42,7 @@ You will be required to prepare a small 5 minute presentation based around your 
 
 ## File Structure
 
-Make sure that you're file structure is setup appropriately. Separate out all your Javascript, Css and images into their own independent files. e.i.
+Make sure that you're file structure is setup appropriately. Separate out all your Javascript, Css and images into their own independent files. e.i.  done
 
 ```
 +-- project-one
@@ -67,13 +67,13 @@ You will be working **individually** for this project! So show us what you've go
 
 ## Planning
 
-We strongly advise that you take the time to plan your project well. You should include all planning, wireframes, skatches etc in your presentation.
+We strongly advise that you take the time to plan your project well. You should include all planning, wireframes, skatches etc in your presentation. done
 
 #### Project Plan deliverables:
 
 * **Scope.** What are you planning to build? What features will it have? What do you think you can reasonably implement in the time period?
 
-* **Wireframes.** Sketch out what a few of your core pages will look like and how they will work and link between each other. Again, pen and aper works great. You can also check out wire framing software like Protoshare or Balsamic.
+* **Wireframes.** Sketch out what a few of your core pages will look like and how they will work and link between each other. Again, pen and aper works great. You can also check out wire framing software like Protoshare or Balsamic. done
 
 * **Milestones.** We will give you some dates and milestones to help keep you on track. Outline some specific milestones for yourself based on how you prefer to work.
 
@@ -85,7 +85,7 @@ Make sure that your code and files are:
 * DRY.  Can I reuse parts of the code in different areas of the project?
 * Well-commented. Will anyone else quickly understand what is going on in your application?
 * Well-formatted. Write pretty code: indent properly, format consistently.
-* Fully git tracked with dev and master branches with your trainers added as collaborators with an acceptable amount of git comments.
+* Fully git tracked with dev and master branches with your trainers added as collaborators with an acceptable amount of git comments. done
 
 We’ll also be looking at:
 

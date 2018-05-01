@@ -22,7 +22,7 @@
   fly();
 
 
-  //SCENARIO 2.1
+  //SCENARIO 5.1
 
   // global variables
   var scenario1btn = document.getElementById('scenario1-btn');
@@ -31,21 +31,28 @@
   var removeOption = document.getElementById('remove');
   var options = document.getElementsByTagName("li");
   var scenario2 = [];
+  var stageOne = false;
+
 
 
   scenario1btn.addEventListener("click", function(event){
+    console.log($("#scenario1-input").val());
     var userInput =  ($("#scenario1-input").val());
+    console.log(userInput);
     var options = document.getElementsByTagName("li");
     var scenarioParag = document.getElementsByClassName("scenario");
 
-    if (userInput === "1"){
-      // user picks option 1: branch off to no worries let's eat!(SC2)
-      scenario1btn.getAttributeNode("href").value = "level1-sc2.html";
 
-    }
-    else {
-      // user picks option 2: special lose screen for rudies!
-      window.location.href = "lose-screen-rude.html";
-    }
+//in the Edge browser scenario, user chooses correct option 2
+// Wow! And is taken to a special win screen
+  if (userInput === "2"){
+    window.location.href = "level1-special-win.html";
 
-  });
+ }
+ //user chooses option 1 HA and is
+ //taken to a special lose screen for browser snobs
+ else if (userInput === "1"){
+   window.location.href = "lose-screen-snob.html";
+
+ }
+});

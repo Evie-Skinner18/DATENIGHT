@@ -2,13 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>DATE NIGHT | Level 1</title>
+    <title>DATE NIGHT | You Win!</title>
     <link rel="stylesheet" href="../../project-one/css/bootstrap.css">
     <link rel="stylesheet" href="../../project-one/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
-  <body>
-    <body>
+  <body id="developers">
+    <audio autoplay src="../sounds/little_robot_instant_win.mp3"></audio>
+
       <div class="container">
         <div class="jumbotron">
           <h1 id="title">DATE NIGHT
@@ -20,22 +21,16 @@
 
         <div class="row">
           <div class="col-md-12 viewport">
-            <h2 class="ask">LEVEL 1: You have asked shy Sydney on a date. Try not to scare him off!</h2>
+            <h2 class="ask">LEVEL 1 COMPLETE!</h2>
+            <div id="wolverine"></div>
               <p class="scenario">
-                You didn't apologise for being late and now he seems a bit niffed... Maybe you
-                can win him back though! Do you...
+                Looks like we're both tool-agnostic developers babe.
+                Let's meet up tomorrow for a second date!
               </p>
-                <ol>
-                  <li class="options">
-                    Thank him for being so patient and recommend
-                    a tasty starter of <em>croquetas</em>
-                  </li>
-                  <li class="options">Ask him why he's so grumpy</li>
-                </ol>
-                <form class="" action="index.html" method="post">
-                  <input type="text" id="scenario1-input" value="" class="form-control" placeholder="What do you do?">
-                  <a class="btn btn-default" id="scenario1-btn" role="button" href="#">Submit answer</a>
-                </form>
+              <p class="scenario">
+                <a class="btn btn-info btn-lg" href="level2.html" role="button">Continue playing</a>
+                <a class="btn btn-warning btn-lg" id="title" href="index.html" role="button">Quit game</a>
+              </p>
           </div> <!--end of viewport-->
         </div> <!--END OF ROW-->
 
@@ -46,6 +41,6 @@
 
       </div> <!--end of container-->
 
-    <script src="../../project-one/js/scenario2.1.js" charset="utf-8"></script>
+    <script src="../../project-one/js/instant-win.js" charset="utf-8"></script>
   </body>
 </html>
