@@ -37,18 +37,35 @@
 
 
 function nextLevel(userInput) {
-//in the Edge browser scenario, user chooses correct option 2
-// Wow! And is taken to a special win screen
-  if (userInput === "2"){
-    window.location.href = "level1-special-win.html";
+//in the new weird cinema scenario, user chooses option 1 film:
+// Shia playing his dad, and is taken to sc 3.1
+  if (userInput === "1" && stageOne === true){
+    window.location.href = "level2-sc3.1.html";
 
  }
- //user chooses option 1 HA and is
- //taken to a special lose screen for browser snobs
- else if (userInput === "1"){
-   window.location.href = "lose-screen-snob.html";
+ //in the new weird cinema scenario, user chooses option 2
+ //Even Stevens and is taken to sc 3.2 where he starts crying
+ else if (userInput === "2" && stageOne === true){
+   window.location.href = "level2-sc3.2.html";
 
  }
+ //user picks option 1 real ale OR option 2 trebles: weird scenario 1
+ // cinema
+ else if (userInput === "1" || userInput === "2"){
+   scenarioParag[0].innerHTML =
+   ("Good choice. As you sip your drink, you naturally get chatting with Shia about cinema. What are you keen to ask?")
+   options[0].innerHTML = ("So, tell me about this new film you're making where you play your own dad...");
+   options[1].innerHTML = ("So tell me, what was the banter like on the set of Even Stevens?");
+   removeOption.remove();
+   stageOne = true;
+ }
+ // user picks option 3 cocktail and is taken to
+ //weird scenario 2 performance art (SC3.3)
+ else {
+   window.location.href = "level2-sc3.3.html";
+
+ }
+
 }
 
 for(var i = 0; i < options.length; i++){

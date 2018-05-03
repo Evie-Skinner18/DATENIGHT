@@ -29,16 +29,13 @@
   var scenarioParag = document.getElementsByClassName("scenario");
   var parent = document.getElementsByTagName('ol');
   var removeOption = document.getElementById('remove');
-  var options = document.getElementsByTagName("li");
+  var options = document.querySelectorAll(".options");
+  console.log(options);
   var scenario2 = [];
   var stageOne = false;
 
 
-
-  scenario1btn.addEventListener("click", function(event){
-    var userInput =  ($("#scenario1-input").val());
-    var options = document.getElementsByTagName("li");
-    var scenarioParag = document.getElementsByClassName("scenario");
+  function nextLevel(userInput){
 
   //in the new video game scenario, user chooses option 1 respect and is taken to contented silence (SC5)
     if (userInput === "1" && stageOne === true){
@@ -55,7 +52,17 @@
     else {
       // user picks losing option 2: not good enough.
       //take user to lose screen
-      scenario1btn.getAttributeNode("href").value = "lose-screen.html";
+      window.location.href = "lose-screen.html";
     }
 
-  });
+  }
+
+  for(var i = 0; i < options.length; i++){
+    options[i].addEventListener("click", function(event){
+    console.log(event.target.getAttribute("data-index"))
+    var userInput = event.target.getAttribute("data-index");
+    console.log(event);
+     nextLevel(userInput);
+
+   });
+  }

@@ -29,28 +29,36 @@
   var scenarioParag = document.getElementsByClassName("scenario");
   var parent = document.getElementsByTagName('ol');
   var removeOption = document.getElementById('remove');
-  var options = document.getElementsByTagName("li");
+  var options = document.querySelectorAll(".options");
+  console.log(options);
   var scenario2 = [];
   var stageOne = false;
 
 
+function nextLevel(userInput) {
 
-  scenario1btn.addEventListener("click", function(event){
-    var userInput =  ($("#scenario1-input").val());
-    var options = document.getElementsByTagName("li");
-    var scenarioParag = document.getElementsByClassName("scenario");
-
+  // user selects correct option 2: ask about job. Take user to edge browser scene
    if (userInput === "2"){
      window.location.href = "level1-edge-browser.html";
    }
-   // user selects the correct option: 1 just chill. Take user to instant win page.
+   // user selects correct option: 1 just chill. Take user to instant win page.
     else if (userInput === "1"){
       window.location.href = "level1-instant-win.html";
     }
     else {
       // user picks losing option 3: talk about Annie
       //take user to special lose screen for rudies
-      scenario1btn.getAttributeNode("href").value = "lose-screen-rude.html";
+      window.location.href = "lose-screen-rude.html";
     }
 
-  });
+  }
+
+  for(var i = 0; i < options.length; i++){
+    options[i].addEventListener("click", function(event){
+    console.log(event.target.getAttribute("data-index"))
+    var userInput = event.target.getAttribute("data-index");
+    console.log(event);
+     nextLevel(userInput);
+
+   });
+  }
