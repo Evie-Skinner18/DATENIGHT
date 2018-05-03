@@ -22,7 +22,7 @@
   fly();
 
 
-  //SCENARIO 5.1
+  //SCENARIO 3
 
   // global variables
   var scenario1btn = document.getElementById('scenario1-btn');

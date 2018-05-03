@@ -1,5 +1,5 @@
 body {
-  background-color: #8c2b52;
+  background-image: url("../images/morehearts.png");
   margin:0;
   padding:0;
   border:0;
@@ -81,6 +81,7 @@ body {
   color: #002b82;
   margin-top: auto;
 }
+
 /* Styles for each scenario */
 .scenario {
   font-size: 30px;
@@ -153,12 +154,26 @@ background-color:#002b82;
 }
 
 /* LEVEL 2 SHIA LABOEUF */
-#shia {
-  background-image: url("../images/morehearts.png");
-}
+
 .shia-spooky {
   width: 35%;
   height: 45%;
   margin-left: 300px;
 
+}
+.shia-sad {
+  width: 23%;
+  height: 33%;
+  margin-left: 400px;
+
+}
+
+/* END WIN SCREEN */
+#you-win {
+  background-image: url("../images/you-win.png");
+
+}
+#marvin {
+    margin-top: 180px;
+    background-color: #70f4d8;
 }
