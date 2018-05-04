@@ -21,7 +21,7 @@
   fly();
 
   // LEVEL 1, DATE WITH SHY MAN. If user input is 2 or 3, change the
-  // href that the button takes them to to LOSE SCREEN
+  // window location the button takes them to to LOSE SCREEN
   var scenario1btn = document.getElementById('scenario1-btn');
   var scenarioParag = document.getElementsByClassName("scenario");
   var parent = document.getElementsByTagName('ol');
@@ -58,9 +58,7 @@
 
 for(var i = 0; i < options.length; i++){
   options[i].addEventListener("click", function(event){
-    console.log(event.target.getAttribute("data-index"))
     var userInput = event.target.getAttribute("data-index");
-    console.log(event);
      nextLevel(userInput);
 
   });

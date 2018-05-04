@@ -29,7 +29,6 @@
   var parent = document.getElementsByTagName('ol');
   var removeOption = document.getElementById('remove');
   var options = document.querySelectorAll(".options");
-  console.log(options);
   var scenario2 = [];
   var stageOne = false;
 
@@ -61,9 +60,7 @@
 
   for(var i = 0; i < options.length; i++){
   options[i].addEventListener("click", function(event){
-    console.log(event.target.getAttribute("data-index"))
     var userInput = event.target.getAttribute("data-index");
-    console.log(event);
      nextLevel(userInput);
 
   });
