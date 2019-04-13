@@ -1,34 +1,40 @@
 body {
-  background-color: #8c2b52;
+  background-image: url("../images/morehearts.png");
   margin:0;
   padding:0;
   border:0;
   overflow:hidden;
 }
-#title {
-  color: #672d84;
-
-
+@font-face {
+    font-family: 'DisposableDroid'; /*a name to be used later*/
+    src: url('../css/blambot_disposable-droid-bb/DisposableDroidBB.otf'); /*URL to font*/
+}
+* {
+  font-family: 'DisposableDroid';
 
 }
+#title {
+  color: #672d84;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 60px;
+}
 
-#title :hover {
+#title:hover {
   color: blue;
 }
 
-
-/* .view {
-  border: 5px solid blue;
-} */
 .viewport {
   height:580px;
   overflow:hidden;
   border: 5px solid #70f4d8;
   background-color: tomato;
+  padding: 10px;
 }
 .ask-him {
   margin-top: 20px;
   border: 5px solid blue;
+
 }
 .exit {
   margin-top: 20px;
@@ -37,7 +43,7 @@ body {
 
 /* animated heart */
 #heart{
-  background-image: url(http://buildnewgames.com/assets/article//dom-sprites/spritesheet.png);
+  background-image: url("../images/spritesheet.png");
   width: 32px;
   height: 32px;
   background-position: -126px -194px;
@@ -51,36 +57,89 @@ body {
   height: 32px;
   background-position: -127px -191px;
   position: relative;
+  font-size: 35px;
 }
 
 /* end of styles for heart */
 
+/* home screen */
 .ask {
   text-align: center;
+  font-size: 35px;
 }
-#wolverine {
-  background-image: url("../images/heygurl.png");
-  height: 60px;
-  width: 58px;
-  background-position: -120px -4px;
+#sydney {
+  background-image: url("../images/sydney-nerd.png");
+  height: 200px;
+  width: 300px;
   display: inline-block;
+  margin-left: 200px;
+}
+/* instructions */
+.instructions{
+  font-size: 30px;
+  text-align: center;
+  color: #002b82;
+  margin-top: auto;
 }
 
 /* Styles for each scenario */
 .scenario {
-  font-size: 20pt;
+  font-size: 30px;
+  text-align: center;
+
 
 }
 .options {
-font-size: 20pt;
+font-size: 26px;
+background-color:#002b82;
 
 }
+.options:hover {
+  color: #70f4d8;
+  text-decoration: none;
+}
 
-/* Lose screen */
+/* Lose screens */
 .lose {
   text-align: center;
   color: yellow;
-  font-weight: 800;
+  font-weight: bold;
+  font-size: 60px;
+}
+#sydney-upset {
+  background-image: url("../images/sydney-upset.png");
+  height: 200px;
+  width: 250px;
+  display: inline-block;
+  margin-left: 400px;
+
+}
+
+/* Styles for browser snob lose screen */
+#edge-browser {
+  background-image: url("../images/edge-browser.png");
+}
+
+/* Styles for developers' win screen */
+#developers {
+  background-image: url("../images/developers.png");
+  background-size: cover;
+
+}
+
+/* instant win */
+#kindred-spirits {
+  background-image: url("../images/kindred-spirits.png");
+  background-size: cover;
+}
+#kindred-spirits-div {
+  width: 100px;
+  height: 100px;
+  margin-left: 350px;
+}
+#kindred {
+  margin-top: 220px;
+  background-color: #70f4d8;
 }
 
 /* LEVEL1 SCENARIO 1 IDs for DOM manipulation */
@@ -88,8 +147,33 @@ font-size: 20pt;
 
 }
 #scenario1-btn {
-
+  font-size: 20px;
 }
 #remove {
-  
+
+}
+
+/* LEVEL 2 SHIA LABOEUF */
+
+.shia-spooky {
+  width: 35%;
+  height: 45%;
+  margin-left: 300px;
+
+}
+.shia-sad {
+  width: 23%;
+  height: 33%;
+  margin-left: 400px;
+
+}
+
+/* END WIN SCREEN */
+#you-win {
+  background-image: url("../images/you-win.png");
+
+}
+#marvin {
+    margin-top: 180px;
+    background-color: #70f4d8;
 }
