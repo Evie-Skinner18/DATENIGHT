@@ -21,18 +21,10 @@ The functionality has been implemented using the following features:
 * 8 bit font from fontspace.com
 
 ## How to Run
-* Clone this repository to your machine by downloading the .zip file
-* Extract the zip file
-* Open project-one/images/index.html in your web browser
+* Open the terminal
+* Clone this repository to your machine by running the command ```git clone https://github.com/Evie-Skinner18/DATENIGHT.git ```
+* Open project-one/index.html in your web browser
 
-## Project Checklist
-| Task                                                                         | Complete? | Trainer Validated? |  
-|------------------------------------------------------------------------------|-----------|--------------------|
-| Instruction section                                                          |     /      |                    |  
-| Appropriate use of styling                                                   |      /     |                    |   
-| Game fully functional                                                        |    /       |                    |   
-| Implemented DRY Practices                                                    |     /      |                    |   
-| Proper HTML/JS/CSS Code Standards (Indentation, spacing, naming conventions) |       /    |                    |   
-| Good Quality Markdown                                                        |   /        |                    |   
-| Fully Git Tracked/Synced with Github                                         |        /   |                    |  
-| Fully prepared presentation.                                                 |      /     |                    |  
+## Known Issues
+* The audio does not work in Chrome because Chrome does not allow audio to be played automatically (it must be triggered by user input). For best results, please play the game in Safari.
+* The game has been developed using functional Javascript rather than an OOP approach.
