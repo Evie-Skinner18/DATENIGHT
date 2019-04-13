@@ -26,5 +26,4 @@ The functionality has been implemented using the following features:
 * Open project-one/index.html in your web browser
 
 ## Known Issues
-* The audio does not work in Chrome because Chrome does not allow audio to be played automatically (it must be triggered by user input). For best results, please play the game in Safari.
 * The game has been developed using functional Javascript rather than an OOP approach.
