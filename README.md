@@ -22,7 +22,7 @@ The functionality has been implemented using the following features:
 
 ## How to Run
 * Open the terminal
-* Clone this repository to your machine by running the command ```git clone https://github.com/Evie-Skinner18/DATENIGHT.git ```
+* Clone this repository to your machine by running the command ```git clone https://github.com/Evie-Skinner18/project-one.git ```
 * Open project-one/index.html in your web browser
 
 ## Known Issues
