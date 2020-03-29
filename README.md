@@ -4,6 +4,8 @@
 ## Purpose
 This is a **text adventure** game developed with HTML5, CSS3 and vanilla JavaScript. The main purpose of the game is to help its users detect and assess different social cues in the complex configurations produced during the course of a date; in addition, the game also serves a comedic purpose. In the future, I would like to make a similar game for autistic people with the aim of helping them to pick up on social cues and become more emotionally intelligent.
 
+## [Play the game!](https://evie-skinner18.github.io/date-night/)
+
 ## Functionality
 **DATE NIGHT** is a simple application that shows the user various different scenarios: the course of the game's story changes depending on the user's reaction to a given scenario. The various reactions are displayed as buttons which, when clicked, transport the user to a subsequent part of the date. To do this, I used vanilla JavaScript to manipulate the elements of the DOM belonging to the buttons.
 
