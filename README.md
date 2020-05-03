@@ -1,5 +1,6 @@
 # Sparta Core Project 1: DATE NIGHT
 
+:rocket:
 
 ## Purpose
 This is a **text adventure** game developed with HTML5, CSS3 and vanilla JavaScript. The main purpose of the game is to help its users detect and assess different social cues in the complex configurations produced during the course of a date; in addition, the game also serves a comedic purpose. In the future, I would like to make a similar game for autistic people with the aim of helping them to pick up on social cues and become more emotionally intelligent.
@@ -24,7 +25,7 @@ The functionality has been implemented using the following features:
 
 ## How to Run
 * Open the terminal
-* Clone this repository to your machine by running the command ```git clone https://github.com/Evie-Skinner18/project-one.git ```
+* Clone this repository to your machine by running the command ```git clone https://github.com/Evie-Skinner18/date-night.git ```
 * Open project-one/index.html in your web browser
 
 ## Known Issues
